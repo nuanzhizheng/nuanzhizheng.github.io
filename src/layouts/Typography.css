@@ -1,7 +1,6 @@
 /* Base text styles */
 body {
-  font-family: "Courier New", monospace; /* Similar to the example site */
-  line-height: 1.5;
+  font-family: "Courier New", monospace;
 }
 
 h1,
@@ -10,7 +9,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: normal; /* The example seems to use lighter headings */
+  font-weight: normal;
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
