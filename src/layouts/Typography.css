@@ -1,0 +1,57 @@
+/* Base text styles */
+body {
+  font-family: "Courier New", monospace; /* Similar to the example site */
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal; /* The example seems to use lighter headings */
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #4e6e1c;
+}
+
+h2 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #4e6e1c;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+/* Navigation links */
+.sidebar a {
+  text-decoration: none;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.sidebar a:hover {
+  text-decoration: underline;
+}
+
+/* Content styling */
+.content-text p {
+  margin-bottom: 1.2rem;
+}
+
+/* Email and other links */
+.contact-link {
+  text-decoration: none;
+}
+
+.contact-link:hover {
+  text-decoration: underline;
+}

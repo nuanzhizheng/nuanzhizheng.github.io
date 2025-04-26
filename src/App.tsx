@@ -1,35 +1,50 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import "./layouts/Layout.css";
+import "./layouts/Typography.css";
+import profileImage from "./assets/nuanzhi-zheng.jpg";
 
-function App() {
-  const [count, setCount] = useState(0)
-
+function Layout() {
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className="page-container">
+      <div className="sidebar">
+        <h1>Nuanzhi Zheng</h1>
+        <nav>
+          <ul>
+            <li>About</li>
+            <li>Work</li>
+          </ul>
+        </nav>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
+
+      <div className="main-content">
+        <div className="content-text">
+          <h2>About</h2>
+          <p>
+            Nuanzhi Zheng 郑暖之 is an interdisciplinary artist specialising in
+            writing, moving image, and illustration. This occupies space in
+            theatre and contemporary art, actualising in discussions of
+            feminism, existentialism, race, class and queer theory. She lives in
+            Tāmaki Makaurau and is a Shanghai gal in her bones.{" "}
+          </p>
+          <p>
+            A graduate of Elam (BFA (First Class Hons)), Nuanzhi has shown at
+            Gus Fisher Gallery and UXBRIDGE Arts & Culture. Her most recent
+            plays include Evening! with Jimmy Applause (2021), Yang/Young/杨
+            (co-written with Sherry Zhang, 2021) and Chick Habit (2023). Chick
+            Habit was selected for Playmarket Asian Ink Award 2022. Evening!
+            with Jimmy Applause was selected for Auckland Fringe Sharu Loves
+            Hats Producer Mentorship Award 2021. Yang/Young/杨 was shortlisted
+            in Playmarket Playwrights b4 25 Awards 2019.
+          </p>
+        </div>
+
+        <div className="content-image">
+          <img src={profileImage} alt="Profile" />
+        </div>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+
+      <div className="right-space" />
+    </div>
+  );
 }
 
-export default App
+export default Layout;
