@@ -48,11 +48,11 @@
   }
 
   .content-text h2 {
-    margin-top: 0; /* Reduce top margin on headings */
+    margin-top: 0;
   }
 
   .sidebar h1 {
-    font-size: 1.5rem; /* Reduce the size of the name */
+    font-size: 1.5rem;
     margin-bottom: 1.5rem;
   }
 }
