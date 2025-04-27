@@ -47,15 +47,7 @@ export function About() {
 
         <div className="content-image">
           <div style={{ position: "relative", width: "fit-content" }}>
-            <div
-              style={{
-                position: "absolute",
-                zIndex: 0,
-                top: "92%",
-                left: "0%",
-                transform: "translate(-50%, -50%)",
-              }}
-            >
+            <div className="about-starburst">
               <Starburst size={80} />
             </div>
             <img src={profileImage} alt="Profile" />
