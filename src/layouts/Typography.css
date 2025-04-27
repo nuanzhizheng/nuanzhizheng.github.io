@@ -1,6 +1,14 @@
 /* Base text styles */
+@font-face {
+  font-family: "Sligoil-Micro";
+  src: url("/fonts/Sligoil-Micro.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 body {
-  font-family: "Courier New", monospace;
+  font-family: "Sligoil-Micro", "Courier New", monospace;
 }
 
 h1,
