@@ -48,9 +48,12 @@ p {
 
 /* Email and other links */
 .contact-link {
+  color: #4e6e1c;
+  font-weight: 600;
   text-decoration: none;
 }
 
 .contact-link:hover {
+  color: #4e6e1c;
   text-decoration: underline;
 }
