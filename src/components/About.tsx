@@ -1,4 +1,5 @@
 import profileImage from "../assets/nuanzhi-zheng.jpg";
+import { Starburst } from "./Starburst";
 
 export function About() {
   return (
@@ -23,10 +24,42 @@ export function About() {
             Hats Producer Mentorship Award 2021. Yang/Young/杨 was shortlisted
             in Playmarket Playwrights b4 25 Awards 2019.
           </p>
+          <p>
+            <a
+              href="https://www.instagram.com/breakfast.express/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="contact-link"
+            >
+              Instagram{" "}
+            </a>
+            <br />
+            <a
+              href="mailto: dzhe97@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="contact-link"
+            >
+              Email
+            </a>
+          </p>
         </div>
 
         <div className="content-image">
-          <img src={profileImage} alt="Profile" />
+          <div style={{ position: "relative", width: "fit-content" }}>
+            <div
+              style={{
+                position: "absolute",
+                zIndex: 0,
+                top: "92%",
+                left: "0%",
+                transform: "translate(-50%, -50%)",
+              }}
+            >
+              <Starburst size={80} />
+            </div>
+            <img src={profileImage} alt="Profile" />
+          </div>
         </div>
       </div>
     </>
