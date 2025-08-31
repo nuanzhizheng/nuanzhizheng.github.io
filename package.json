@@ -4,18 +4,20 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
+    "dev": "TINA_PUBLIC_IS_LOCAL=true tinacms dev -c \"next dev\"",
+    "build": "tinacms build && next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
     "next": "^15.5.2",
     "react": "^19.1.1",
-    "react-dom": "^19.1.1"
+    "react-dom": "^19.1.1",
+    "tinacms": "^2.8.2"
   },
   "devDependencies": {
     "@eslint/js": "^9.22.0",
+    "@tinacms/cli": "^1.10.2",
     "@types/node": "^24.3.0",
     "@types/react": "^19.0.10",
     "@types/react-dom": "^19.0.4",

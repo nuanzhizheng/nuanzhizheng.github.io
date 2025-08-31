@@ -48,3 +48,4 @@ pnpm-debug.log*
 .cache
 .parcel-cache
 .turbo
+.next
