@@ -22,14 +22,15 @@
 
 .content-text {
   flex: 1;
-  padding-right: 3rem;
+  padding-right: 4rem;
 }
 
 .content-image {
   flex: 1;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
+  padding-top: 3rem;
 }
 
 .content-image img {
@@ -79,6 +80,10 @@
   .about-starburst {
     transform: translate(-50%, -50%) scale(0.9);
   }
+
+  .content-image {
+    padding-top: 0;
+  }
 }
 
 /* Mobile and small tablets */
@@ -113,5 +118,9 @@
 
   .about-starburst {
     transform: translate(-35%, -50%) scale(0.9);
+  }
+
+  .content-image {
+    padding-top: 0;
   }
 }
