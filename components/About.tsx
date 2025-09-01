@@ -24,6 +24,25 @@ export function About() {
           Mentorship Award 2021. Yang/Young/杨 was shortlisted in Playmarket
           Playwrights b4 25 Awards 2019.
         </p>
+        <p>
+          <a
+            href="https://www.instagram.com/breakfast.express/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="contact-link"
+          >
+            Instagram{" "}
+          </a>
+          <br />
+          <a
+            href="mailto: dzhe97@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="contact-link"
+          >
+            Email
+          </a>
+        </p>
       </div>
 
       <div className="content-image">
