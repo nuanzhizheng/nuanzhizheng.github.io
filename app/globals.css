@@ -103,18 +103,18 @@ button:focus-visible {
 
 .main-content {
   grid-column: 2 / 3;
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
   padding: 8rem 2rem;
+  align-items: start;
 }
 
 .content-text {
-  flex: 1;
-  padding-right: 4rem;
+  /* Text takes up left half */
 }
 
 .content-image {
-  flex: 1;
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -122,7 +122,9 @@ button:focus-visible {
 }
 
 .content-image img {
-  max-width: 100%;
+  width: 100%;
+  max-width: 500px;
+  min-width: 350px;
   height: auto;
 }
 
@@ -170,6 +172,11 @@ button:focus-visible {
     grid-template-columns: 130px 1fr 80px;
   }
 
+  .content-image img {
+    max-width: 400px;
+    min-width: 300px;
+  }
+
   .about-starburst {
     transform: translate(-50%, -50%) scale(0.7);
   }
@@ -177,20 +184,26 @@ button:focus-visible {
 
 @media (max-width: 900px) and (min-width: 769px) {
   .main-content {
-    flex-direction: column;
+    grid-template-columns: 1fr;
+    gap: 0;
   }
 
   .content-text {
-    padding-right: 0;
     padding-bottom: 2rem;
-  }
-
-  .about-starburst {
-    transform: translate(-50%, -50%) scale(0.9);
   }
 
   .content-image {
     padding-top: 0;
+    justify-self: center;
+  }
+
+  .content-image img {
+    max-width: 400px;
+    min-width: 300px;
+  }
+
+  .about-starburst {
+    transform: translate(-50%, -50%) scale(0.9);
   }
 }
 
@@ -210,13 +223,23 @@ button:focus-visible {
   .main-content {
     grid-column: 1;
     grid-row: 2;
-    flex-direction: column;
+    grid-template-columns: 1fr;
+    gap: 0;
     padding: 0rem 1rem 2rem;
   }
 
   .content-text {
-    padding-right: 0;
     padding-bottom: 2rem;
+  }
+
+  .content-image {
+    padding-top: 0;
+    justify-self: center;
+  }
+
+  .content-image img {
+    max-width: 350px;
+    min-width: 250px;
   }
 
   .right-space {
@@ -225,10 +248,6 @@ button:focus-visible {
 
   .about-starburst {
     transform: translate(-35%, -50%) scale(0.9);
-  }
-
-  .content-image {
-    padding-top: 0;
   }
 }
 
