@@ -103,6 +103,7 @@ export function About() {
            Like an addiction I wept for the place I could not access, Gus Fisher Gallery, 2020{" "}
           </a>
         </p>
+        <p>
           Get in touch:
         </p>
         <p>
