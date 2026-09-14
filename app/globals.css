@@ -1,7 +1,9 @@
 /* Font declaration */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100..900&display=swap');
+
 @font-face {
-  font-family: "Sligoil-Micro";
-  src: url("/fonts/Sligoil-Micro.otf") format("opentype");
+  font-family: 'Sligoil-Micro';
+  src: url('/fonts/Sligoil-Micro.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -9,7 +11,7 @@
 
 /* Base styles */
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: system-ui, Avenir, Helvetica, Arial, 'Noto Sans SC', sans-serif;
   line-height: 1.5;
   font-weight: 400;
   color-scheme: light dark;
@@ -22,7 +24,7 @@
 }
 
 body {
-  font-family: "Sligoil-Micro", "Courier New", monospace;
+  font-family: 'Sligoil-Micro', 'Courier New', 'Noto Sans SC', monospace;
   color: black;
   margin: 0;
   display: flex;
@@ -135,7 +137,7 @@ button:focus-visible {
 .about-starburst {
   position: absolute;
   z-index: 0;
-  top: 92%;
+  top: 85%;
   left: 0%;
   transform: translate(-50%, -50%);
 }
@@ -164,6 +166,10 @@ button:focus-visible {
 .contact-link:hover {
   color: #4e6e1c;
   text-decoration: underline;
+}
+
+.photo-credit {
+  text-align: end;
 }
 
 /* Responsive styles */
