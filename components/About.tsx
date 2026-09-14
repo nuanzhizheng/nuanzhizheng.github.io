@@ -25,7 +25,7 @@ export function About() {
           Emerging Writers Table in 2024 and has participated in various
           iterations of The Rawdog Gaysian Playwright Challenge. In 2025, they
           collaborated with Evangelina Telfar, writing Best Laid Plans for the
-          one-act anthology play Compromise.  Nuanzhi undertook a residency with
+          one-act anthology play Compromise. Nuanzhi undertook a residency with
           Robert Lord Writers Cottage Trust in 2026 to develop a multimedia
           theatre piece, Best Head Girl (working title).
         </p>
