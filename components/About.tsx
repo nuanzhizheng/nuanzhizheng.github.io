@@ -26,6 +26,15 @@ export function About() {
         </p>
         <p>
           <a
+            href="https://nuanzhi.substack.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="contact-link"
+          >
+            Substack{" "}
+          </a>
+          <br />
+            <a
             href="https://www.instagram.com/breakfast.express/"
             target="_blank"
             rel="noopener noreferrer"
@@ -35,7 +44,7 @@ export function About() {
           </a>
           <br />
           <a
-            href="mailto: dzhe97@gmail.com"
+            href="mailto: nuanzhi@proton.me"
             target="_blank"
             rel="noopener noreferrer"
             className="contact-link"
